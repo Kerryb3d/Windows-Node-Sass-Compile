@@ -1,0 +1,38 @@
+{
+  "name": "Windows-Node-Sass-Compile",
+  "version": "1.0.0",
+  "description": "Compiles Sass files using Npm or .bat files",
+  "vars": {
+    "cssOutputPath": "./dist/css/",
+    "cssOptions": "--output-style compressed --source-map true --source-map-contents true --include-path node_modules"
+  },
+  "scripts": {
+    "compile-main": "node-sass %npm_package_vars_cssOptions% ./src/main/main.scss %npm_package_vars_cssOutputPath%main.css",
+    "compile-main-watch": "npm run compile-main -- --watch",
+    "compile-all": "npm run compile-main"
+  },
+  "author": "Kerry Blanchard",
+  "homepage": "https://github.com/Kerryb3d/Windows-Node-Sass-Compile",
+  "bugs": {
+    "url": "https://github.com/Kerryb3d/Windows-Node-Sass-Compile/issues"
+  },
+  "repository" : { 
+    "type" : "git", 
+    "url" : "https://github.com/Kerryb3d/Windows-Node-Sass-Compile.git"
+  },
+  "files": [
+    "src/"
+  ],
+  "keywords": [
+    "css",
+    "sass",
+    "web"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
