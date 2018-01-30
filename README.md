@@ -3,9 +3,11 @@
 Template created to help Windows users compile Sass files to specified project directories. 
 
 ## Table of contents
-
+- [Tools Used](#tools-used)
 - [Getting Started](#getting-started)
-- [Documentation](#documentation)
+- [Folder Structure](#folder-structure)
+- [Running compile with npm](#running-compile-with-npm)
+- [Running compile with .bat](#running-compile-with-.bat)
 
 ## Tools Used
 - [Nodejs](https://nodejs.org)
@@ -37,7 +39,7 @@ src/
 - "compile_variables.scss" currently only contains text for a global comment header, to be used across all sass projects.
 - "main" is simply a placeholder sass project directory.  Multiple projects can be created
 
-## Running compile in npm
+## Running compile with npm
 ---
 
 **Standard compile**
