@@ -7,26 +7,24 @@ Template created to help Windows users compile Sass files to specified project d
 - [Getting Started](#getting-started)
 - [Folder Structure](#folder-structure)
 - [Running compile with npm](#running-compile-with-npm)
-- [Running compile with .bat](#running-compile-with-.bat)
+- [Running compile with  Windows bat file](#running-compile-with-windows-bat-file)
 
 ## Tools Used
 - [Nodejs](https://nodejs.org)
 - [node-sass](https://github.com/sass/node-sass)
 
 ## Getting Started
----
 1. [Install Nodejs](https://nodejs.org)
 1. In Cli, Clone Repo
     ```
     git clone https://github.com/Kerryb3d/Windows-Node-Sass-Compile.git
     ```
-1. From the `Windows-Node-Sass-Compile` directory, run
+1. From the "Windows-Node-Sass-Compile" directory, run
     ```
     npm install
     ```
 
 ## Folder Structure
----
 ```
 src/
 |── main
@@ -40,21 +38,20 @@ src/
 - "main" is simply a placeholder sass project directory.  Multiple projects can be created
 
 ## Running compile with npm
----
 
 **Standard compile**
-- From the `Windows-Node-Sass-Compile` directory, run
+- From the "Windows-Node-Sass-Compile" directory, run
     ```
     npm run compile-main
     ```
 **Compile with "--watch" option**
-- From the `Windows-Node-Sass-Compile` directory, run
+- From the "Windows-Node-Sass-Compile" directory, run
     ```
     npm run compile-main-watch
     ```
 
 **Compile all projects**
-- From the `Windows-Node-Sass-Compile` directory, run
+- From the "Windows-Node-Sass-Compile" directory, run
     ```
     npm run compile-all
     ```
@@ -76,20 +73,19 @@ src/
 - `"compile-main"` compile the main sass project
 - `"compile-main-watch"` watch for changes in main sass project
 - `"compile-all"` compile all projects
-## Running compile with .bat
----
+## Running compile with Windows bat file
 
 **Standard compile (default directory "dist/css")**
-- From the `Windows-Node-Sass-Compile` directory, double click `compile-main-sass.bat`
+- From the "Windows-Node-Sass-Compile" directory, double click `compile-main-sass.bat`
 
 **Compile using custom directory**
-- From the `Windows-Node-Sass-Compile` directory, run 
+- From the "Windows-Node-Sass-Compile" directory, run 
     ```
     compile-main-sass.bat "output=C:\development\projects"
     ```
 
 **Compile using custom options**
-- From the `Windows-Node-Sass-Compile` directory, run 
+- From the "Windows-Node-Sass-Compile" directory, run 
     ```
     compile-main-sass.bat "options=--watch"
     ```
