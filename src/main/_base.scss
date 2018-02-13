@@ -1,10 +1,10 @@
 // Custom Variables
-$body-padding: 1rem;
+$body-padding: 1rem !default;
 
 /* ================================================================================================
 LAYOUT
 ================================================================================================ */
 body {
-	background-color: $global-bg-color;
 	padding: $body-padding;
+	background-color: $global-bg-color;
 }

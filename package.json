@@ -3,22 +3,23 @@
   "version": "1.0.0",
   "description": "Compiles Sass files using Npm or .bat files",
   "vars": {
-    "cssOutputPath": "./dist/css/",
+    "cssOutputPath": "./dist/css",
     "cssOptions": "--output-style compressed --source-map true --source-map-contents true --include-path node_modules"
   },
   "scripts": {
-    "compile-main": "node-sass %npm_package_vars_cssOptions% ./src/main/main.scss %npm_package_vars_cssOutputPath%main.css",
+    "compile-main": "node-sass %npm_package_vars_cssOptions% ./src/main/main.scss %npm_package_vars_cssOutputPath%/main.css",
     "compile-main-watch": "npm run compile-main -- --watch",
-    "compile-all": "npm run compile-main"
+    "compile-all": "npm run compile-main",
+    "css-lint": "stylelint --syntax scss \"./src/**/*.scss\""
   },
   "author": "Kerry Blanchard",
   "homepage": "https://github.com/Kerryb3d/Windows-Node-Sass-Compile",
   "bugs": {
     "url": "https://github.com/Kerryb3d/Windows-Node-Sass-Compile/issues"
   },
-  "repository" : { 
-    "type" : "git", 
-    "url" : "https://github.com/Kerryb3d/Windows-Node-Sass-Compile.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kerryb3d/Windows-Node-Sass-Compile.git"
   },
   "files": [
     "src/"
@@ -33,6 +34,11 @@
     "bootstrap": "^4.0.0"
   },
   "devDependencies": {
-    "node-sass": "^4.7.2"
+    "node-sass": "^4.7.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-recommended-scss": "^3.0.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-order": "^0.8.0",
+    "stylelint-scss": "^2.3.0"
   }
 }
